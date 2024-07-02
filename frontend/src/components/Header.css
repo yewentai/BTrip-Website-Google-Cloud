@@ -1,0 +1,148 @@
+/* src/components/Header.css */
+header {
+    height: 60px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 0 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #8b939c;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+    max-width: 1200px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    /* Adjust the height as needed */
+    margin-right: 10px;
+}
+
+.company-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links,
+.user-links {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li,
+.user-links li {
+    margin-right: 20px;
+}
+
+.nav-links li:last-child,
+.user-links li:last-child {
+    margin-right: 0;
+}
+
+/* Link Styles */
+.nav-links li a,
+.user-links li a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.user-links li a:hover {
+    color: #007bff;
+}
+
+.user-dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: linear-gradient(to bottom, #fff 0%, #f7f7f7 100%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+    list-style: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-width: 160px;
+    z-index: 1000;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.user-dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-menu li {
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    width: 100%;
+}
+
+.dropdown-menu li a:hover {
+    color: #555;
+    background-color: #f1f1f1;
+}
+
+.dropdown-menu li i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}

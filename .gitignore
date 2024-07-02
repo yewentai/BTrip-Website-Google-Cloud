@@ -1,0 +1,135 @@
+# System files #
+################
+*.log
+.DS_Store
+Thumbs.db
+
+# IDE and editor directories #
+##############################
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Java/Maven specific #
+########################
+target/
+!.mvn/wrapper/maven-wrapper.jar
+**/target/
+**/classes/
+dependency-reduced-pom.xml
+build/
+lib/
+out/
+release/
+
+# Compiled source #
+###################
+*.class
+*.jar
+*.war
+*.ear
+
+# Package Files #
+#################
+*.nar
+*.zip
+*.tar.gz
+*.rar
+
+# Node specific #
+#################
+/frontend/node_modules/
+/frontend/build/
+/frontend/.pnp
+/frontend/.pnp.js
+/frontend/coverage/
+/frontend/.cache
+/frontend/dist
+
+# Logs #
+########
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories #
+##########################
+node_modules/
+jspm_packages/
+
+# Optional npm cache directory #
+################################
+.npm
+
+# Optional eslint cache #
+#########################
+.eslintcache
+
+# dotenv environment variables file #
+#####################################
+.env
+.env.test
+.env.production
+
+# Parcel #
+##########
+.cache
+.dist
+
+# Misc #
+########
+*.swp
+*.swo
+*.tmp
+*.bak
+*.tmp_proj
+*.tlog
+*.tmproj
+__pycache__/
+*.py[cod]
+*$py.class
+
+# macOS additional files #
+#########################
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Thumbnails #
+##############
+._*
+
+# Files that might appear in the root of a volume #
+###################################################
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.dontcreated
+
+# Directories potentially created on remote AFP share #
+########################################################
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# React generated files #
+#########################
+/src/main/resources/static/
+
+# Others #
+##########
+btripagency-firebase-adminsdk-wdrxr-aa5116b1d4.json
+src/main/resources/static/static/
+combined_output.txt
+getcodetext.py
+*.Identifier
+google-cloud-sdk
+asset-manifest.json
+index.html

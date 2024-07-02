@@ -1,0 +1,9 @@
+.status.booked {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.status.reserved {
+    background-color: #FFC107;
+    color: black;
+}

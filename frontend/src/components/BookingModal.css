@@ -1,0 +1,100 @@
+/* src/components/BookingModal.css */
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    /* Increased z-index to ensure it appears above other elements */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Semi-transparent background */
+}
+
+.modal-content {
+    background-color: #f2f5f7;
+    /* Lighter version of main background color */
+    border: 1px solid #ddd;
+    /* Adjust border color for consistency */
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.4s;
+    z-index: 1001;
+    /* Ensures the content itself is above the overlay */
+    font-family: "Roboto", sans-serif;
+}
+
+.close {
+    color: #4CAF50;
+    /* Use dominant color as accent */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.booking-details {
+    margin-top: 20px;
+}
+
+.details-section {
+    margin-bottom: 20px;
+}
+
+.details-section h4 {
+    margin-bottom: 10px;
+}
+
+.details-section label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.details-section input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

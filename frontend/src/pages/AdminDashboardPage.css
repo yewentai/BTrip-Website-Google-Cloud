@@ -1,0 +1,36 @@
+/* src/pages/AdminDashboardPage.css */
+.admin-dashboard {
+    padding: 20px;
+}
+
+.admin-section {
+    margin-bottom: 30px;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.admin-table th,
+.admin-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.admin-table th {
+    background-color: #f2f2f2;
+}
+
+.admin-loader,
+.admin-error {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.admin-error {
+    color: red;
+}
