@@ -6,22 +6,38 @@ The flights provider is Ryanair, the hotels provider is Booking.com, and the car
 
 ![BTrip Logo](./frontend/public/assets/logos/logo512.png)
 
-## Timeline (Delete after submission)
+## Project Overview
 
-### Project submission
+BTrip is a web application developed for the Distributed Systems (B-KUL-T4YDS2) 2023-2024 course. The platform serves as a broker for packaged travel arrangements, including hotel bookings, car rentals, and flight reservations. This service-oriented application is hosted on a cloud platform and integrates various remote services.
 
-The deadline for submission on Toledo is **June 16th, 23:59 CET**. Each student must submit the solution of the team individually on Toledo.
+### Key Features
 
-#### Deliverables
+- **Packaged Bookings**: Users can book travel packages that include hotels, flights, and rental cars.
+- **Service Integration**: Connects with multiple external supplier services via RESTful or SOAP APIs.
+- **Cloud Deployment**: Utilizes Google App Engine to ensure scalability and high availability.
+- **Fault Tolerance**: Designed to handle failures in external service interactions robustly.
+- **Data Persistence**: Uses Cloud Firestore to manage booking data consistently and reliably.
+- **User Authentication**: Secure user management using Firebase Authentication.
 
-1. The code of your project, which implements all requirements up to the level that you choose to complete.
-2. A report in which you discuss design decisions and show additional insights into deploying a cloud application.
+## System Architecture
 
-### Defense
+This multi-tiered system includes:
 
-You will need to defend your solution with your full team during the exam period at the end of June (**June26th-28th**).
+- **Frontend**: A React-based Single Page Application (SPA) providing a user-friendly interface.
+- **Backend**: A Java/Spring Boot application that processes API requests and handles business logic.
+- **External Supplier Services**: Separate services for hotels, flights, and car rentals hosted on independent VMs.
 
-## Development Log (Delete after submission)
+## Installation and Setup
+
+### Prerequisites
+
+- Java SE Development Kit (JDK) 17
+- Maven
+- Google Cloud SDK
+- Firebase CLI
+- Node.js
+
+## Development Log
 
 ### Frontend
 
@@ -55,33 +71,3 @@ TODO:
 - ADD: use ryanair-py 3.0.0 to get flight information
 - ADD: calculate the total price of the order with the price of the hotel, flight, car rental, tax, and service fee
 
-## Project Overview
-
-BTrip is a web application developed for the Distributed Systems (B-KUL-T4YDS2) 2023-2024 course. The platform serves as a broker for packaged travel arrangements, including hotel bookings, car rentals, and flight reservations. This service-oriented application is hosted on a cloud platform and integrates various remote services.
-
-### Key Features
-
-- **Packaged Bookings**: Users can book travel packages that include hotels, flights, and rental cars.
-- **Service Integration**: Connects with multiple external supplier services via RESTful or SOAP APIs.
-- **Cloud Deployment**: Utilizes Google App Engine to ensure scalability and high availability.
-- **Fault Tolerance**: Designed to handle failures in external service interactions robustly.
-- **Data Persistence**: Uses Cloud Firestore to manage booking data consistently and reliably.
-- **User Authentication**: Secure user management using Firebase Authentication.
-
-## System Architecture
-
-This multi-tiered system includes:
-
-- **Frontend**: A React-based Single Page Application (SPA) providing a user-friendly interface.
-- **Backend**: A Java/Spring Boot application that processes API requests and handles business logic.
-- **External Supplier Services**: Separate services for hotels, flights, and car rentals hosted on independent VMs.
-
-## Installation and Setup
-
-### Prerequisites
-
-- Java SE Development Kit (JDK) 17
-- Maven
-- Google Cloud SDK
-- Firebase CLI
-- Node.js
